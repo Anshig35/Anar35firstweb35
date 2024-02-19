@@ -1,0 +1,18 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: hsl(33, 78%, 91%);
+    color:rebeccapurple;
+}
+.logo {
+    max-width: 90px;
+    display: block;
+    margin: auto;
+}
+.navigation {
+    text-align: center;
+    background-color:hsl(33, 78%, 50%)
+}
+.navigation a {
+    color:hsl(33, 78%, 91%);
+    text-decoration: none;
+}
