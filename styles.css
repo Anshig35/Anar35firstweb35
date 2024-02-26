@@ -15,4 +15,9 @@ body {
 .navigation a {
     color:hsl(33, 78%, 91%);
     text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
 }
+/* .navigation a:nth-child(2) {
+    color: red;
+} */
