@@ -7,11 +7,16 @@
     <link rel="icon" href="bananas-4225900-3504959.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -19,30 +24,48 @@
         <img class="logo" src="pngtree-banana-logo-vector-illustration-pulp-eating-snack-vector-png-image_37273506.png">
         <form id="search-form">
             <input type="text" name="search-keywords" id="search">
-            <button type="submit">Search</button>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
         </form>
         <nav class="navigation">
-            <a href="index.html">Home</a>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
             <a href="products.html">Products</a>
             <a href="news.html">News</a>
             <a href="contact.html">Contact</a>
             <a href="support.html">Support</a>
         </nav>
     </header>
-    <div class="banner">
+    <!-- <div class="banner">
         <h1>Welcome!</h1>
+    </div> -->
+    <div class="front-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="cell">One</div>
+        <div class="cell">Two</div>
+        <div class="cell">Three</div>
+        <div class="cell">Four</div>
+        <div class="cell">Five</div>
     </div>
     <main class="content">
         <h2>First Website</h2>
         <p>
-            The bright morning sun illuminated the clear blue sky, casting a warm glow on the vibrant green leaves of the trees. Birds chirped merrily, a gentle breeze rustled the colorful flowers, and the air was filled with the sweet smell of blooming blossoms. The sky was dotted with fluffy white clouds, drifting lazily across the vast expanse. People walked with a spring in their step, enjoying the perfect weather that seemed to fill the world with an air of joy and contentment.
+            The bright morning sun illuminated the clear blue sky, casting a warm glow on the vibrant green leaves of
+            the trees. Birds chirped merrily, a gentle breeze rustled the colorful flowers, and the air was filled with
+            the sweet smell of blooming blossoms. The sky was dotted with fluffy white clouds, drifting lazily across
+            the vast expanse. People walked with a spring in their step, enjoying the perfect weather that seemed to
+            fill the world with an air of joy and contentment.
         </p>
         <div class="card-grid">
             <div class="card">
                 <img src="products/brett-jordan-fAz5Cf1ajPM-unsplash.jpg" class="card-image">
                 <h3>Nice wine</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id fugiat ullam commodi voluptatum ea ex aperiam nulla sapiente consequatur adipisci at aspernatur, facilis pariatur illo temporibus itaque in expedita.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id fugiat ullam commodi
+                    voluptatum ea ex aperiam nulla sapiente consequatur adipisci at aspernatur, facilis pariatur illo
+                    temporibus itaque in expedita.
                 </p>
                 <button type="button" class="card-button">Add to cart</button>
             </div>
@@ -50,7 +73,9 @@
                 <img src="products/duminda-perera-KKv5cgmhyRg-unsplash.jpg" class="card-image">
                 <h3>Fine wine</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id fugiat ullam commodi voluptatum ea ex aperiam nulla sapiente consequatur adipisci at aspernatur, facilis pariatur illo temporibus itaque in expedita.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id fugiat ullam commodi
+                    voluptatum ea ex aperiam nulla sapiente consequatur adipisci at aspernatur, facilis pariatur illo
+                    temporibus itaque in expedita.
                 </p>
                 <button type="button" class="card-button">Add to cart</button>
             </div>
@@ -58,7 +83,9 @@
                 <img src="products/tony-flood-Ifm8MA4_4sw-unsplash.jpg" class="card-image">
                 <h3>Budget wine</h3>
                 <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias non nobis, sunt similique qui veniam quod eum atque, tempore libero accusantium architecto voluptates aperiam debitis ut mollitia, praesentium vitae!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias non nobis, sunt
+                    similique qui veniam quod eum atque, tempore libero accusantium architecto voluptates aperiam
+                    debitis ut mollitia, praesentium vitae!
                 </p>
                 <button type="button" class="card-button">Add to cart</button>
             </div>

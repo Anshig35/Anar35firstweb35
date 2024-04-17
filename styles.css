@@ -1,31 +1,46 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --jet: hsla(0, 0%, 18%, 1);
+    --rose-pompadour: hsla(342, 57%, 68%, 1);
+    --dodger-blue: hsla(205, 94%, 52%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --vanilla: hsla(50, 66%, 80%, 1);
+}
+
 body {
     /* font-family:Arial, Helvetica, sans-serif; */
-    font-family: "Roboto", sans-serif;
-    background-color: hsl(33, 78%, 91%);
-    color:rebeccapurple;
+    font-family: var(--main-font);
+    background-color: var(--vanilla);
+    color: var(--jet);
     margin: 0px;
 }
+
 .logo {
     max-width: 90px;
     display: block;
     /* margin: auto; */
 }
+
 .navigation {
     text-align: center;
-    /* background-color:hsl(33, 78%, 50%); */
+    display: flex;
+    flex-direction: row;
 }
+
 .navigation a {
-    color:hsl(33, 98%, 19%);
+    color: var(--jet);
     text-decoration: none;
     padding: 20px 10px;
     display: inline-block;
 }
+
 /* .navigation a:nth-child(2) {
     color: red;
 } */
 .navigation a:hover {
-    background-color:hsl(33, 93%, 70%);
+    background-color: var(--dodger-blue);
 }
+
 .banner {
     /* 50vh = 50% window height */
     min-height: 50vh;
@@ -36,16 +51,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .banner h1 {
     font-size: 3em;
     font-weight: 800;
-    color: white;
+    color:var(--white);
     /* X offset Y offset Blur Color */
     text-shadow: 0px 0px 2px black;
     letter-spacing: 20px;
 }
+
 .banner h1:hover {
-    filter: blur( 5px );
+    filter: blur(5px);
 }
 
 .main-header {
@@ -53,7 +70,25 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
+
+#search-form {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+#search-form input {
+    border: 1px solid #7d7d7d;
+    padding: 0.5em;
+}
+
+#search-form button {
+    border: 1px solid #7d7d7d;
+    padding: 0.5em;
+}
+
 .content {
     max-width: 1000px;
     margin: auto;
@@ -72,4 +107,33 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+}
+.front-carousel {
+    min-width: 100%;
+    min-height: 50vh;
+    background-color: var(--rose-pompadour);
+}
+.cell {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.cell:nth-child(1) {
+    background-color: aquamarine;
+    background-image: url("carousel/kym-ellis-aF1NPSnDQLw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
+}
+.cell:nth-child(2) {
+    background-color:blueviolet;
+    background-image: url("carousel/maksym-kaharlytskyi-3uJt73tr4hI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
 }
