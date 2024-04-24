@@ -82,6 +82,7 @@ body {
 #search-form input {
     border: 1px solid #7d7d7d;
     padding: 0.5em;
+    flex: 1;
 }
 
 #search-form button {
@@ -136,4 +137,13 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-size: 4em;
+}
+
+.nav-button {
+    font-size: 32px;
+    background-color: transparent;
+    align-self: center;
+    border: solid transparent;
+    color: var(--jet);
+    display: none;
 }
